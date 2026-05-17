@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImóveisCo - Chat</title>
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -22,6 +21,7 @@
 
     <main>
         <section class="chat-layout">
+            <input type="radio" id="conv-none" name="conversation" hidden>
             <input type="radio" id="conv-maria" name="conversation" checked hidden>
             <input type="radio" id="conv-joao" name="conversation" hidden>
             <input type="radio" id="conv-carla" name="conversation" hidden>
@@ -29,24 +29,24 @@
             <section class="chat-list">
                 <label for="conv-maria" class="chat-item">
                     <span class="chat-avatar"><img src="imagens/maria.png" alt="Maria"></span>
-                    <section>
+                    <span class="chat-meta">
                         <span class="chat-name">Maria</span>
-                        <p>Oi, tudo bem?</p>
-                    </section>
+                        <span class="chat-preview">Oi, tudo bem?</span>
+                    </span>
                 </label>
                 <label for="conv-joao" class="chat-item">
                     <span class="chat-avatar"><img src="imagens/user.png" alt="João"></span>
-                    <section>
+                    <span class="chat-meta">
                         <span class="chat-name">João</span>
-                        <p>Sobre o quarto...</p>
-                    </section>
+                        <span class="chat-preview">Sobre o quarto...</span>
+                    </span>
                 </label>
                 <label for="conv-carla" class="chat-item">
                     <span class="chat-avatar"><img src="imagens/camila.png" alt="Carla"></span>
-                    <section>
+                    <span class="chat-meta">
                         <span class="chat-name">Carla</span>
-                        <p>Visita agendada!</p>
-                    </section>
+                        <span class="chat-preview">Visita agendada!</span>
+                    </span>
                 </label>
             </section>
 
@@ -85,32 +85,27 @@
         <section class="modal-content chat-modal-content">
             <a href="#" class="close">&times;</a>
             <section class="chat-layout">
-                <input type="radio" id="conv-none" name="conversation" checked hidden>
-                <input type="radio" id="conv-maria" name="conversation" hidden>
-                <input type="radio" id="conv-joao" name="conversation" hidden>
-                <input type="radio" id="conv-carla" name="conversation" hidden>
-
                 <section class="chat-list">
                     <label for="conv-maria" class="chat-item">
                         <span class="chat-avatar"><img src="imagens/maria.png" alt="Maria"></span>
-                        <section>
+                        <span class="chat-meta">
                             <span class="chat-name">Maria</span>
-                            <p>Oi, tudo bem?</p>
-                        </section>
+                            <span class="chat-preview">Oi, tudo bem?</span>
+                        </span>
                     </label>
                     <label for="conv-joao" class="chat-item">
                         <span class="chat-avatar"><img src="imagens/user.png" alt="João"></span>
-                        <section>
+                        <span class="chat-meta">
                             <span class="chat-name">João</span>
-                            <p>Sobre o quarto...</p>
-                        </section>
+                            <span class="chat-preview">Sobre o quarto...</span>
+                        </span>
                     </label>
                     <label for="conv-carla" class="chat-item">
                         <span class="chat-avatar"><img src="imagens/camila.png" alt="Carla"></span>
-                        <section>
+                        <span class="chat-meta">
                             <span class="chat-name">Carla</span>
-                            <p>Visita agendada!</p>
-                        </section>
+                            <span class="chat-preview">Visita agendada!</span>
+                        </span>
                     </label>
                 </section>
 
